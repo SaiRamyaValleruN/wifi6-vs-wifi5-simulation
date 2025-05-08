@@ -1,8 +1,14 @@
-# Ignore everything on scratch by default, except the provided examples
+# Ignore everything by default
 /*
-!.gitignore
 
+# Do not ignore these files
+!.gitignore
+!CMakeLists.txt
+!scratch-simulator.cc
+
+# Allow subdirectories
 !nested-subdir/
 !subdir/
-!scratch-simulator.cc
-!CMakeLists.txt
+
+# Allow all Python files in current folder
+!*.py

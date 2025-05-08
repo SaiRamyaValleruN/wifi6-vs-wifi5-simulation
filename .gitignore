@@ -57,3 +57,6 @@ vcpkg/
 !nested-subdir/
 !subdir/
 build/
+build/
+*.so
+*.pcap

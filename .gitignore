@@ -1,12 +1,11 @@
+# Ignore common temporary and build files
 *.diff
 *.orig
 *.patch
 *.rej
-
 *.o
 *.pyc
 *.pyo
-
 *.cwnd
 *.dat
 *.log
@@ -16,37 +15,44 @@
 *.routes
 *.tr
 [D|U]l[A-Z][a-z]*Stats.txt
-
 \#*#
 *~
-
 testpy-output
 
+# Virtual environments
+venv/
+myenv/
+
+# Python binding cache
 bindings/python/pybindgen/
 
-venv/
-
+# Profiler and coverage outputs
 ms_print.*
 massif.*
 coverity
 TAGS
 
+# Lock and local config files
 .lock-ns3_*
 .ns3rc
 
+# Build and IDE files
 build-dir/
 build/
-/.cproject
-/.project
-
+.cproject
+.project
 version.cache
-
 .gitlab-ci-local/
 .idea/
 cmake-*/
 vcpkg/
-
 .vs/
-
-# Ignore local cache used by e.g. clangd
 .cache/
+
+# Allow tracked files from scratch folder and important scripts
+!CMakeLists.txt
+!.gitignore
+!scratch-simulator.cc
+!*.py
+!nested-subdir/
+!subdir/

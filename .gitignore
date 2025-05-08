@@ -56,3 +56,4 @@ vcpkg/
 !*.py
 !nested-subdir/
 !subdir/
+build/
